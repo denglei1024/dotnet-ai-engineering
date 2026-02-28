@@ -1,0 +1,12 @@
+Input:   Hello, Built-in Workflow Events!  
+--- Built-in events ---
+#1 [SuperStepStartedEvent] SuperStep=0, StepInfo = Microsoft.Agents.AI.Workflows.SuperStepStartInfo, Data=Microsoft.Agents.AI.Workflows.SuperStepStartInfo
+#2 [ExecutorInvokedEvent] Executor=NormalizeTextExecutor, Data=  Hello, Built-in Workflow Events!  
+#3 [ExecutorCompletedEvent] Executor=NormalizeTextExecutor, Data=HELLO, BUILT-IN WORKFLOW EVENTS!
+#4 [SuperStepCompletedEvent] SuperStep=0, StepInfo = Microsoft.Agents.AI.Workflows.SuperStepCompletionInfo, Data=Microsoft.Agents.AI.Workflows.SuperStepCompletionInfo
+#5 [SuperStepStartedEvent] SuperStep=1, StepInfo = Microsoft.Agents.AI.Workflows.SuperStepStartInfo, Data=Microsoft.Agents.AI.Workflows.SuperStepStartInfo
+#6 [ExecutorInvokedEvent] Executor=WordCountExecutor, Data=HELLO, BUILT-IN WORKFLOW EVENTS!
+#7 [ExecutorCompletedEvent] Executor=WordCountExecutor, Data=HELLO, BUILT-IN WORKFLOW EVENTS! | WordCount=4
+#8 [WorkflowOutputEvent] Output=HELLO, BUILT-IN WORKFLOW EVENTS! | WordCount=4
+#9 [SuperStepCompletedEvent] SuperStep=1, StepInfo = Microsoft.Agents.AI.Workflows.SuperStepCompletionInfo, Data=Microsoft.Agents.AI.Workflows.SuperStepCompletionInfo
+[说明] 本次运行未收到 WorkflowStartedEvent；在当前执行模式下该事件可能不会被发出。
